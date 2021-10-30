@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h1>Hey there!</h1>
+            <form>
+                <label>
+                     What's your name?
+                     <input type="text" name="username" placeholder="Enter your name" required minlength="3" maxlength="15">
+                </label>
+                <label >
+                   What's your email address?
+                <input type="email" name="email" placeholder="Enter your email address"required >
+                </label>
+                <label>
+                    What services are you looking for?
+                    <select name="service-options " required>
+                        <option selected disabled value="">Choose a service</option>
+                        <option value="fitness">Fitness room</option>
+                        <option value="sauna">Sauna</option>
+                        <option value="tours">Excursions and guided tours</option>
+                        <option value="car-rental">Car rental</option>
+                    </select>
+                </label>
+                <label>
+                    What is your budget?
+                    <select name="budget-options" required>
+                        <option selected disabled value="">Select budget</option>
+                        <option value="small-budget">200$</option>
+                        <option value="medium-budget">400$</option>
+                        <option value="large-budget">500$</option>
+                    </select> 
+                </label>
+                <label>
+                    Anything else you'd like to tell us?
+                   <textarea name="message" cols="50" rows="3" placeholder="Your message here..."></textarea>
+                </label>
+                <label>
+                    I agree with the T&Cs.
+                    <input type="checkbox" name="T&C" required>
+                </label>
+                <button type="submit" name="submit-button">
+                    Submit →
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
